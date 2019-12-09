@@ -1,0 +1,188 @@
+  @media print{
+    body, 
+    .tm-main-content, 
+    .tm-content-box, 
+    .tm-footer{
+      padding: 0;
+      margin: 0;
+    }
+    footer{
+        padding-top: 5px;
+    }
+    footer p{
+        margin: 0;
+    }
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        color: lightskyblue;
+        font-weight: 300;
+    }
+    ol{
+        list-style: none;
+        padding: 0;
+        margin:0 auto;
+    }
+    ol li:nth-child(even){
+        text-align: left;
+    }
+    ol li:nth-child(odd){
+        text-align: right;
+    }
+    section.blocks .tm-team-description-container p:last-child{
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+    section.heading{
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .padding-medium{
+        padding: 15px 40px;
+    }
+    .carousel-content{
+        padding: 0 40px;
+    }
+    p{
+        padding: 0;
+    }
+    .tm-sidebar, #about, .tm-team-img, .blocks .tm-content-box, .carousel-indicators, #ideas ~ section.tm-content-box{
+        display: none;
+    }
+    .tm-team-description-container {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0;
+  }
+}
+
+@media screen{
+    .tm-nav-item-link:hover{
+        background-color: lightskyblue;
+        color: white;
+    }
+    .tm-banner{
+        background: linear-gradient(90deg,lightskyblue, burlywood);
+    }
+    .tm-banner-inner{
+        background-color: white;
+    }
+    .tm-banner-text{
+        text-shadow: 5px 4px 3px rgb(31, 30, 30);
+        animation-name: animate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    @keyframes animate{
+        from{
+            transform: translateX(200px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .flex-2-col{
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-item{
+        align-self: center;
+    }
+    .tm-section-title{
+        text-align: center;
+    }
+    .tm-box-bg-title:hover, .box-bg:hover{
+      background-color: lightgrey;
+      color: lightskyblue;
+      font-style: italic;
+    }
+    .padding-medium h2~ol{
+        list-style: lower-alpha;
+    }
+    .padding-medium ol li:hover::before{
+        content: ">";
+        color: black;
+        font-weight: bold;
+    }
+    a.text::after{
+        content: "New";
+        font-weight: bold;
+        color: red;
+        font-size: 10px;
+        font-variant: small-caps;
+        position: absolute;
+    }
+    section.heading h2:first-of-type{
+        color: lightskyblue;
+        text-align: center;
+    }
+    section.blocks .tm-team-description-container h2.tm-section-title,
+    section.tm-content-box div.padding-medium h2.tm-section-title{
+        text-align: left;
+    }
+    section.blocks .tm-team-description-container p:last-child{
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+    ul.boxes .box-work{
+        padding: 10px;
+    }
+    ul.boxes .box-work:nth-child(odd){
+        background-color: lightskyblue;
+        color:white;
+    }
+    ul.boxes .box-work div p{
+        font-style: italic;
+    }
+    ul.boxes .box-work div p::first-letter{
+        font-weight: bold;
+    }
+    p.tm-section-description{
+        text-indent: 25px;
+        line-height: 30px;
+    }
+    input[type=text], input[type=email]{
+        border:none;
+        border-bottom:1px solid lightskyblue;
+    }
+    form.contact-form div.form-group textarea{
+        border-color: lightskyblue;
+        background: url(../img/email-icon.png);
+        background-repeat: no-repeat;
+        background-position: right 10px bottom 10px;
+        background-size: 30px;
+    }
+    form.contact-form div.form-group textarea:focus{
+        box-shadow: none;
+    }
+    .submit-btn{
+        float: right;
+        border: 1px solid lightskyblue;
+        background-color: white;
+        color: lightskyblue;
+        width: 110px;
+        height: 60px;
+    }
+    .submit-btn:hover{
+      background-color: lightskyblue;
+      border-color: lightskyblue;
+    }
+    input[placeholder]:focus{
+        background-color: lightskyblue;
+    }
+    .tm-sidebar, #home, section{
+        box-shadow: -1px 0px 7px 1px rgba(58, 56, 58, 0.75);
+    }
+    section::before{
+        content: '';
+        position: absolute;
+        border: 20px solid transparent;
+        border-left: 20px solid lightskyblue;
+        border-top: 20px solid lightskyblue;
+    }
+}
