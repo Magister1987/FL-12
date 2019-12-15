@@ -1,0 +1,18 @@
+$bg-header: (bgImg: url(../img/m-h-day.jpg));
+$boldM: 600;
+$size2: 20px;
+$size20: 200px;
+$sizeW: 75px;
+$marginStandart: 0 auto;
+$fontA: 'Source Sans Pro', sans-serif;
+$fontB: 'Hind', sans-serif;
+$allColors: (
+    whiteG: #fff,
+    colorMain:rgb(44, 47, 60), 
+    colorBody:#fff,
+    buttonB: rgb(105, 153, 0),
+    markB: rgb(20, 160, 199),
+    greyFoo: rgb(192, 195, 206),
+    blackFoo: rgb(33, 35, 46),
+    gradient: linear-gradient(45deg, rgb(100, 148, 20), rgb(48, 95, 202))
+);

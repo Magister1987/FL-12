@@ -1,0 +1,18 @@
+$bg-header: (bgImg: url(../img/m-h-night.jpg));
+$boldM: 600;
+$size2: 20px;
+$size20: 200px;
+$sizeW: 55px;
+$marginStandart: 0 auto;
+$fontA: 'Source Sans Pro', sans-serif;
+$fontB: 'Fresca', sans-serif;
+$allColors: (
+    whiteG: #fff,
+    colorMain:rgb(255, 255, 255), 
+    colorBody:rgb(33, 35, 46),
+    buttonB: rgb(227, 172, 0),
+    markB: rgb(255, 78, 51),
+    greyFoo: rgb(204, 209, 209),
+    blackFoo: rgb(59, 63, 80),
+    gradient: linear-gradient(45deg, rgb(275, 170, 2), rgb(151, 51, 78))
+);
